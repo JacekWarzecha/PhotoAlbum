@@ -1,0 +1,15 @@
+version: '3'
+services:
+ postgres:
+  image: postgres
+  ports:
+   - "5432:5432"
+  environment:
+   - "POSTGRES_PASSWORD=bazadanych"
+   - "POSTGRES_USER=photo"
+   - "POSTGRES_DB=postgresPhoto"
+  volumes:
+   - .postgres-data:/var/lib/postgresql/data
+
+volumes:
+ db-data:

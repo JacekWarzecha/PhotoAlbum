@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    password: bazadanych
+    username: photo
+    url: jdbc:postgresql://localhost:5432/postgresPhoto
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8082
